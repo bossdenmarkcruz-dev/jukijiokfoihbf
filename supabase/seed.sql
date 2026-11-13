@@ -1,0 +1,5 @@
+-- Seed example admin user
+-- Replace with actual auth.users IDs created during signup.
+-- insert into public.profiles (id, email, full_name, credits, is_admin)
+-- values ('00000000-0000-0000-0000-000000000001', 'admin@boostforge.test', 'Admin User', 0, true)
+-- on conflict (id) do update set is_admin = true;
