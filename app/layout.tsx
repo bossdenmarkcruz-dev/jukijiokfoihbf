@@ -1,20 +1,19 @@
 import './globals.css';
-import type { Metadata } from 'next';
-import { Toaster } from 'react-hot-toast';
-import { Toast } from '@/components/ui/Toast';
+import type { Metadata, Viewport } from 'next';
 
 export const metadata: Metadata = {
-  title: 'BoostForge',
-  description: 'GCash payment verification and credit-based social media boosting.'
+  title: 'BoostForge — Make your next big moment happen',
+  description: 'A simple creator growth toolkit. Top up with GCash, choose your boost, and keep creating while BoostForge handles the rest.',
+};
+
+export const viewport: Viewport = {
+  themeColor: '#fcfdfb',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        {children}
-        <Toast />
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
